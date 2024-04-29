@@ -1,3 +1,5 @@
+Linear regression by using Deep Neural network: Implement Boston housing price prediction problem by network. 
+Use Boston House price Prediction dataset.
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
