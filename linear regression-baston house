@@ -1,28 +1,33 @@
 Linear regression by using Deep Neural network: Implement Boston housing price prediction problem by network. 
 Use Boston House price Prediction dataset.
 
+if these not work see kaggle website for Boston 
+
 import pandas as pd 
 import numpy as np
-from sklearn import metrics import matplotlib.pyplot as plt import seaborn as sns %matplotlib inline
+from sklearn import metrics 
+import matplotlib.pyplot as plt 
+import seaborn as sns 
+%matplotlib inline
 
-from sklearn.datasets import fetch_openml boston fetch openml(name="boston,
-version=1)
+from sklearn.datasets import fetch_openml 
+boston=fetch openml(name="boston,version=1)
 
-data pd.DataFrame(boston.data) data.head()
-
-data.columns = boston.feature names
-
+data pd.DataFrame(boston.data) 
 data.head()
 
-data[PRICE] = boston.target
+data.columns = boston.feature_names
+data.head()
+
+data['PRICE'] = boston.target
 
 data.shape
 
-data.columnis
+data.columns
 
 data.dtypes
 
-data.nunuque()
+data.nunique()
 
 data.isnull().sum()
 
@@ -35,8 +40,7 @@ corr = data.corr()
 corr.shape
 
 plt.figure(figsize=(20,20))
-
-sns.heatmap(corr, cbar=True, square True, fmt.lf, annot=True, annot_kws={"size":15}, cmap="Greens')
+sns.heatmap(corr, char=True, square=True, fmt.lf, annot=True, annot_kws={"size":15}, cmap="Greens')
 
 X = data.drop([PRICE], axis = 1)
 
