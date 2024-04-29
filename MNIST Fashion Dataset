@@ -1,3 +1,5 @@
+Use MNIST Fashion Dataset and create a classifier to classify 
+fashion clothing into categories.
 
 import tensorflow as tf
 import matplotlib.pyplot as plt
