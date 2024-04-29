@@ -57,17 +57,17 @@ Im.fit(X_train, y_train)
 
 lm.intercept
 
-coeffcients = pd.DataFrame([X train.columns,lm.coef]).T
+coeffcients = pd.DataFrame([X_train.columns,lm.coef]).T
 
 coeffcients = coeffcients.rename(columns={0: Attribute, 1 Coefficients'))
 coeffcients
 
-y_pred model.predict(X test)
+y_pred model.predict(X_test)
 
-mse_nn = mean_squared_error(y_test, y pred nn)
+mse_nn = mean_squared_error(y_test, y_pred_nn)
 
-mae nn mean absolute error(y test, y pred nn)
+mae_nn mean absolute error(y_test, y_pred_nn)
 
-print("Mean Squared Error:, mse nn) 
-print('Mean Absolute Error:, mae nn)
+print("Mean Squared Error:, mse_nn) 
+print('Mean Absolute Error:, mae_nn)
 
